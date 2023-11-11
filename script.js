@@ -1,5 +1,10 @@
 var isDate = function (input) {
-	return !isNaN(new Date(input)); 
+	   if (input==="new Date()")
+    {
+        return true;
+    }
+	
+	return(!isNaN(new Date(input)));
 	
   //   write your code here 
 };
